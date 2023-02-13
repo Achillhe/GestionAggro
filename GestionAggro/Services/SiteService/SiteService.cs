@@ -50,7 +50,7 @@ namespace GestionAggro.Services.SiteService
             if (site is null)
                 return null;
 
-            site.City = site.City;
+            site.City = request.City;
 
             await _context.SaveChangesAsync();
 
